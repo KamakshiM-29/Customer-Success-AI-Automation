@@ -1,1 +1,1 @@
-# Customer-Success-AI-Automation-Platform
+# Customer-Success-AI-Automation
