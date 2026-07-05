@@ -44,7 +44,9 @@ The processed data is automatically stored in Google Sheets, personalized custom
 The solution follows an automated end-to-end workflow that transforms customer feedback into actionable insights with minimal manual intervention.
 
 Customer responses are collected through Google Forms and processed by Google Gemini using n8n. AI-generated insights, including sentiment, customer health, priority, recommended actions, and ownership, are stored in Google Sheets. Based on predefined business rules, personalized emails are sent to customers, high-priority cases are escalated through Slack, and the processed data is automatically reflected in a live Looker Studio dashboard.
-> **Architecture Diagram:** *(To be added)*
+### n8n Workflow
+
+![Workflow](assets/workflow.png)
 ## Workflow Overview
 
 1. Customer submits feedback through Google Forms.
@@ -64,7 +66,9 @@ Customer responses are collected through Google Forms and processed by Google Ge
 ## Live Dashboard
 
 The project includes a live operational dashboard built in Looker Studio. It automatically updates as new customer feedback is processed, providing real-time visibility into customer sentiment, health distribution, priorities, feedback categories, and operational metrics.
+### Dashboard Preview
 
+![Dashboard](assets/dashboard.png)
 **Dashboard Link:** *(To be added)*
 ## Repository Structure
 
