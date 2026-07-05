@@ -45,7 +45,7 @@ The solution follows an automated end-to-end workflow that transforms customer f
 
 Customer responses are collected through Google Forms and processed by Google Gemini using n8n. AI-generated insights, including sentiment, customer health, priority, recommended actions, and ownership, are stored in Google Sheets. Based on predefined business rules, personalized emails are sent to customers, high-priority cases are escalated through Slack, and the processed data is automatically reflected in a live Looker Studio dashboard.
 ### Architecture
-![Workflow Architecture](assets/WorkflowArchitecture.png)
+![Workflow Architecture](assets/Architecture.png)
 ### n8n Workflow
 
 ![Workflow](assets/Workflow.png)
@@ -88,6 +88,7 @@ The project includes a live operational dashboard built in Looker Studio. It aut
 ### Personalized Customer Email
 
 ![Gmail](assets/Gmail.png)
+
 Based on the customer's sentiment, the workflow automatically generates and sends personalized email responses using Gmail. Each message is tailored to the customer's experience while maintaining a consistent Customer Success communication style.
 ## Repository Structure
 
