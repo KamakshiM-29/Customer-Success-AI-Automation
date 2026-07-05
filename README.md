@@ -44,9 +44,11 @@ The processed data is automatically stored in Google Sheets, personalized custom
 The solution follows an automated end-to-end workflow that transforms customer feedback into actionable insights with minimal manual intervention.
 
 Customer responses are collected through Google Forms and processed by Google Gemini using n8n. AI-generated insights, including sentiment, customer health, priority, recommended actions, and ownership, are stored in Google Sheets. Based on predefined business rules, personalized emails are sent to customers, high-priority cases are escalated through Slack, and the processed data is automatically reflected in a live Looker Studio dashboard.
+### Architecture
+![Workflow Architecture](assets/architecture.png)
 ### n8n Workflow
 
-![Workflow](assets/workflow.png)
+![Workflow](assets/Workflow.png)
 ## Workflow Overview
 
 1. Customer submits feedback through Google Forms.
@@ -63,13 +65,30 @@ Customer responses are collected through Google Forms and processed by Google Ge
 5. Personalized emails are sent automatically.
 6. High-priority customers trigger Slack notifications.
 7. Looker Studio refreshes automatically to provide live operational insights.
+## n8n Workflow
+
+The complete n8n workflow used in this project is available in the `workflow` folder.
+
+```
+workflow/
+└── Customer-Success-AI-Automation.json
+```
+## Security Notice
+
+Sensitive credentials, OAuth connections, document identifiers and environment-specific configuration have been removed from this workflow. Reconnect your own Google Sheets, Gmail, Slack and Google Gemini credentials before running the automation.
+You can import this workflow directly into n8n and reconnect your own Google Sheets, Gmail, Slack and Google Gemini credentials.
 ## Live Dashboard
 
 The project includes a live operational dashboard built in Looker Studio. It automatically updates as new customer feedback is processed, providing real-time visibility into customer sentiment, health distribution, priorities, feedback categories, and operational metrics.
 ### Dashboard Preview
 
-![Dashboard](assets/dashboard.png)
-**Dashboard Link:** *(To be added)*
+![Dashboard](assets/Dashboard.png)
+**Dashboard Link:** https://datastudio.google.com/reporting/7dd67387-0ef8-4985-aac6-b352149e99cc
+## Automated Customer Communication
+### Personalized Customer Email
+
+![Gmail](assets/gmail.png)
+Based on the customer's sentiment, the workflow automatically generates and sends personalized email responses using Gmail. Each message is tailored to the customer's experience while maintaining a consistent Customer Success communication style.
 ## Repository Structure
 
 ```
