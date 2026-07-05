@@ -90,6 +90,10 @@ The project includes a live operational dashboard built in Looker Studio. It aut
 ![Gmail](assets/Gmail.png)
 
 Based on the customer's sentiment, the workflow automatically generates and sends personalized email responses using Gmail. Each message is tailored to the customer's experience while maintaining a consistent Customer Success communication style.
+### Internal Slack Escalation
+
+![Slack Notification](assets/Slack.png)
+Negative or high-priority customer feedback is automatically escalated to the Customer Success team through Slack, ensuring timely visibility and faster response to critical customer issues.
 ## Repository Structure
 
 ```
