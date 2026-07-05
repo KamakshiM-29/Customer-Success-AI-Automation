@@ -39,3 +39,70 @@ The processed data is automatically stored in Google Sheets, personalized custom
 | Gmail | Automated customer communication |
 | Slack | Internal escalation and notifications |
 | Looker Studio | Live operational dashboard |
+## Workflow Architecture
+
+The solution follows an automated end-to-end workflow that transforms customer feedback into actionable insights with minimal manual intervention.
+
+Customer responses are collected through Google Forms and processed by Google Gemini using n8n. AI-generated insights, including sentiment, customer health, priority, recommended actions, and ownership, are stored in Google Sheets. Based on predefined business rules, personalized emails are sent to customers, high-priority cases are escalated through Slack, and the processed data is automatically reflected in a live Looker Studio dashboard.
+> **Architecture Diagram:** *(To be added)*
+## Workflow Overview
+
+1. Customer submits feedback through Google Forms.
+2. n8n detects every new response automatically.
+3. Google Gemini analyzes the feedback and generates:
+   - Feedback summary
+   - Customer sentiment
+   - Health score
+   - Health status
+   - Priority level
+   - Recommended next action
+   - Case owner
+4. AI insights are written to Google Sheets.
+5. Personalized emails are sent automatically.
+6. High-priority customers trigger Slack notifications.
+7. Looker Studio refreshes automatically to provide live operational insights.
+## Live Dashboard
+
+The project includes a live operational dashboard built in Looker Studio. It automatically updates as new customer feedback is processed, providing real-time visibility into customer sentiment, health distribution, priorities, feedback categories, and operational metrics.
+
+**Dashboard Link:** *(To be added)*
+## Repository Structure
+
+```
+customer-success-ai-automation/
+│
+├── assets/
+│   ├── workflow.png
+│   ├── dashboard.png
+│   ├── gmail.png
+│   ├── slack.png
+│   └── architecture.png
+│
+├── workflow/
+│   └── customer-success-automation.json
+│
+└── README.md
+```
+## Project Components
+
+The solution consists of the following components:
+
+- Google Forms for customer feedback collection
+- n8n for workflow automation
+- Google Gemini for AI-powered feedback analysis
+- Google Sheets as the operational data source
+- Gmail for automated customer communication
+- Slack for internal case escalation
+- Looker Studio for live reporting and visualization
+
+Each component works together to automate the customer feedback management process from submission to action.
+## Future Enhancements
+
+- CRM integration with platforms such as HubSpot or Salesforce
+- Automated weekly customer success summary reports
+- Task creation for high-priority customer cases
+- Advanced customer trend and churn analysis
+- Support for additional communication channels
+## Project Outcome
+
+This project demonstrates how AI and workflow automation can streamline Customer Success operations by reducing manual effort, improving response times, prioritizing customer issues, and providing real-time operational visibility. It showcases the practical application of automation, AI-assisted decision support, and customer-centric workflows to enhance the overall customer experience.
